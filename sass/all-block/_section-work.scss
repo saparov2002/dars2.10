@@ -1,0 +1,102 @@
+.work{
+    margin-top: 112px;
+}
+
+.cards{
+   
+    &-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center; 
+        @include tablet() {
+            text-align: center;
+        } 
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center; 
+        max-width: 719px;
+        margin: 16px auto;
+        @include tablet() {
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 600px
+        }
+    }
+    
+    &__card{
+        @include centerItem();
+        justify-content: space-evenly;
+        @include tablet() {
+            display: grid;
+            grid-template-areas: "child-1" "child-2";
+            align-items: center;
+            justify-content: center;
+        }
+        &-img{
+            @include tablet() {
+                grid-area: child-1;
+                margin: 20px auto;
+            }
+        }
+    }
+    &-btn{
+        border: none;
+        background-color: $btn-bg-color;
+        color: $main-color;
+        padding: 8px 16px;
+        border-radius: 5px;
+        margin-top: 50px;
+        transform: translateX(485px);
+        @include tablet() {
+            transform: translateX(310px);
+        }
+        @include tablet-btn() {
+            transform: translateX(250px);
+        }
+        @include tablet-btn-2() {
+            transform: translateX(190px);
+        }
+        @include tablet-btn-3() {
+            transform: translateX(140px);
+        }
+        @include tablet-btn-4() {
+            transform: translateX(90px);
+        }
+        @include tablet-btn-5() {
+            transform: translateX(40px);
+        }
+
+    }
+}
+.about{
+    @include tablet() {
+        grid-area: child-2;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: left; 
+        @include tablet() {
+            text-align: center;
+        }
+    }
+    &-text{
+        max-width: 493px;
+        margin-top: 8px;
+        @include tablet() {
+            text-align: center;
+            max-width: 400px;
+        }
+    }
+}
+.card-2{
+    order: 2;
+}
+.card-3{
+    order: 2;
+}

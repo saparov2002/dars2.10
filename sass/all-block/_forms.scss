@@ -1,0 +1,63 @@
+.form-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.forms{
+    background-color: $btn-bg-color;
+}
+
+.order{
+    &-title{
+        text-align: center;
+        color: $main-color;
+    }
+    &-text{
+        text-align: center;
+        max-width: 719px;
+        margin: 16px auto;
+        color: $main-color;
+    }
+}
+.form{
+    padding: 20px;
+    width: 450px;
+    border-radius: 10px;
+    background-color: $main-color;
+    
+   &-name{
+    display: block;
+    padding: 16px 222px 16px 16px;
+    border: none;
+    border-radius: 5px;
+    color: $all-text-color;
+    background-color: #F3F3F3;
+   }
+   &-tell{
+    display: block;
+    padding: 16px 222px 16px 16px;
+    border: none;
+    border-radius: 5px;
+    color: $all-text-color;
+    background-color: #F3F3F3;
+    margin: 20px 0;
+   }
+   &__select{
+    display: block;
+    padding: 16px 300px 16px 16px;
+    border: none;
+    border-radius: 5px;
+    color: $all-text-color;
+    background-color: #F3F3F3;
+   }
+   &-btn{
+    border: none;
+    color: $main-color;
+    background-color: $btn-bg-color;
+    padding: 8px 26px;
+    border-radius: 5px;
+    margin: 16px 90px 24px 90px;
+   }
+}
